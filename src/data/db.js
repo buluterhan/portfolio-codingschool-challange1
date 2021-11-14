@@ -3,47 +3,47 @@ module.exports = {
     {
       title: 'Moonboard',
       content: '#Web Design',
-      imgLink: '/public/img/portfolio/project-1.jpg'
+      imgLink: 'img/portfolio/project-1.jpg'
     },
     {
       title: 'Gourmina',
       content: '#Application',
-      imgLink: '/public/img/portfolio/project-2.jpg'
+      imgLink: 'img/portfolio/project-2.jpg'
     },
     {
       title: 'Rocket',
       content: '#Web Development',
-      imgLink: '/public/img/portfolio/project-3.jpg'
+      imgLink: 'img/portfolio/project-3.jpg'
     },
     {
       title: 'Micro',
       content: '#Application',
-      imgLink: '/public/img/portfolio/project-4.jpg'
+      imgLink: 'img/portfolio/project-4.jpg'
     },
     {
       title: 'Elemento',
       content: '#Web Development',
-      imgLink: '/public/img/portfolio/project-5.jpg'
+      imgLink: 'img/portfolio/project-5.jpg'
     },
     {
       title: 'Alpha',
       content: '#Web Design',
-      imgLink: '/public/img/portfolio/project-6.jpg'
+      imgLink: 'img/portfolio/project-6.jpg'
     },
     {
       title: 'Voltum',
       content: '#Landing Page',
-      imgLink: '/public/img/portfolio/project-7.jpg'
+      imgLink: 'img/portfolio/project-7.jpg'
     },
     {
       title: 'Orange',
       content: '#Application',
-      imgLink: '/public/img/portfolio/project-8.jpg'
+      imgLink: 'img/portfolio/project-8.jpg'
     },
     {
       title: 'Omega',
       content: '#Web Design',
-      imgLink: '/public/img/portfolio/project-9.jpg'
+      imgLink: 'img/portfolio/project-9.jpg'
     }
     
   ],
