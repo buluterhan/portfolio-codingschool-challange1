@@ -10,3 +10,4 @@ const fakePortfolio = require(path.resolve('src/data/db.js'));
 const compiledIndex = pug.renderFile('src/pug/template.pug', fakePortfolio);
 
 fs.writeFile('public/index.html', compiledIndex, () => console.log('Index successfully compiled to HTML!'));
+fs.writeFile('index.html', compiledIndex, () => console.log('Index successfully compiled to HTML at ROOT!'));
