@@ -783,7 +783,7 @@ nav {
 }
 
 .hero--top--background {
-  background-image: url(/public/img/bg.png);
+  background-image: url(img/bg.png);
   position: relative;
   top: 0;
   background-position: center;
