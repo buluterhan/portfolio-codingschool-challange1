@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ki666518/portfolio.erhanbulut.de/
+    - export DEPLOYPATH=/home/ki666518/public_html/
     - /bin/cp -R * $DEPLOYPATH
