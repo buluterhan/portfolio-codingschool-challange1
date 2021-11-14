@@ -1,0 +1,45 @@
+.resume--container 
+  .container--wrapper
+    h2 Education
+    .timeline--container
+      each education in educations
+        .timeline--element--container
+          .timeline--mark--outer 
+          .timeline--mark--inner
+          .timeline--element--inner
+            .timeline--header
+              .timeline--title 
+                h3= education.place
+                .sub--title
+                  span= education.title
+                  span -
+                  span= education.country
+              .timeline--date 
+                .timeline--date--wrapper
+                  span= education.start_date 
+                  span -
+                  span= education.end_date
+            .timeline--content 
+              p= education.content
+  .container--wrapper
+    h2 Work History
+    .timeline--container
+      each workPlace in workPlaces
+        .timeline--element--container
+          .timeline--mark--outer 
+          .timeline--mark--inner
+          .timeline--element--inner
+            .timeline--header
+              .timeline--title 
+                h3= workPlace.place
+                .sub--title
+                  span= workPlace.title
+                  span -
+                  span= workPlace.country
+              .timeline--date 
+                .timeline--date--wrapper
+                  span= workPlace.start_date 
+                  span -
+                  span= workPlace.end_date
+            .timeline--content 
+              p= workPlace.content

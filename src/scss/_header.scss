@@ -1,0 +1,32 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color--background;
+}
+
+.header {
+  &--left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    & > img {
+      height: 32px;
+      width: 32px;
+      border-radius: 100%;
+    }
+
+    & > h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  &--right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

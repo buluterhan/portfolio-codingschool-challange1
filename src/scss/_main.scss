@@ -1,0 +1,25 @@
+main {
+  background-color: $color--background;
+}
+
+.body--container {
+  display: flex;
+  box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+  margin:  0 15px;
+  justify-content: center;
+
+  @media screen and (max-width:$breakpoint--medium) {
+    flex-wrap: wrap;
+    margin:0;
+    box-shadow: none;
+  }
+}
+
+.main--wrapper{
+  padding: 0 30px;
+
+  @media screen and (max-width:$breakpoint--medium) {
+    margin-top: 88px;
+  }
+
+}

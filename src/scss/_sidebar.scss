@@ -1,0 +1,274 @@
+.sidebar--container {
+  background: #20202a;
+  width: 290px;
+  min-width: 290px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 999;
+  -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+
+  @media screen and (max-width: $breakpoint--medium) {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    order: 2;
+    box-shadow: none;
+    background: #1e1e28; 
+  }
+
+  .sidebar--wrapper {
+    padding: 0 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    .sidebar--header {
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 99999;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(
+        159deg,
+        rgba(37, 37, 50, 0.98) 0%,
+        rgba(35, 35, 45, 0.98) 100%
+      );
+      text-align: center;
+      -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+      box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+
+      @media screen and (max-width: $breakpoint--medium) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sidebar--avatar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: $breakpoint--medium) {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0;
+        }
+
+        & > img {
+          box-shadow: $main--shadow--light;
+          width: 90px;
+          height: 90px;
+          margin: 0 auto;
+          margin-bottom: 0px;
+          border-radius: 50%;
+          position: relative;
+          margin-bottom: 15px;
+          border: 3px solid $color--text--grey;
+
+          @media screen and (max-width: $breakpoint--medium) {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+          }
+        }
+
+        &--text--container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex: 1 auto;
+
+          .title {
+            color: $color--text--light;
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+
+          span {
+            color: $color--text--grey;
+          }
+
+          @media screen and (max-width: $breakpoint--medium) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .sidebar--body {
+    overflow: hidden;
+    padding: 220px 0 50px;
+    -webkit-overflow-scrolling: touch;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    width: 100%;
+
+    @media screen and (max-width: $breakpoint--medium) {
+      padding: 0;
+    }
+
+    .sidebar--main {
+      @media screen and (min-width: $breakpoint--medium) {
+        width: 100%;
+        height: calc(100vh - 270px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+      }
+
+      .info--list {
+        border-bottom: 1px solid #8c8c8e;
+        padding: 20px 0;
+
+        ul {
+          li {
+            line-height: 1.7;
+            h6 {
+              font-size: 0.8rem;
+            }
+            span {
+              color: $color--text--grey;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+
+      .art-lang-skills {
+        border-bottom: 1px solid #8c8c8e;
+        padding: 20px 0;
+      }
+
+      .art-lang-skills-item {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 13px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .art-cirkle-progress {
+        width: 65%;
+        margin: 0 auto 15px;
+      }
+
+      .art-cirkle-progress path:first-child {
+        stroke: #191923;
+      }
+
+      .art-info-bar .art-lang-skills .art-lang-skills-item {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 13px;
+        text-align: center;
+        color: $color--text--light;
+      }
+
+      .art-cirkle-progress path:last-child {
+        stroke: #ffc107;
+      }
+
+      .art-hard-skills {
+        border-bottom: 1px solid #8c8c8e;
+        padding: 20px 0;
+      }
+      .progressbar-text {
+        color: $color--text--light !important;
+      }
+
+      .art-info-bar .art-hard-skills .art-hard-skills-item {
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      .art-hard-skills-item {
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      .art-skill-heading {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+
+      .art-line-progress {
+        width: 100%;
+
+        .progressbar-text {
+          width: 100%;
+          text-align: right;
+          top: -12px !important;
+          font-size: 13px;
+          color: $color--text--light !important;
+        }
+      }
+
+      .art-line-progress path:first-child {
+        stroke: #191923;
+      }
+
+      .art-line-progress path:last-child,
+      .art-cirkle-progress path:last-child {
+        stroke: #ffc107;
+      }
+      .art-knowledge-list {
+        padding: 20px 0;
+        color: $color--text--light;
+
+        @media screen and (max-width: $breakpoint--medium){
+          padding: 20px 0 70px 0;
+        }
+        li i {
+          font-size: 9px;
+          color: #ffc107;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .sidebar--social {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 35px;
+    height: 50px;
+    background: linear-gradient(
+      159deg,
+      rgba(37, 37, 50, 0.98) 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    position: absolute;
+    bottom: 0;
+    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+}

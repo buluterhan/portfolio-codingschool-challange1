@@ -1,0 +1,13 @@
+.portfolio--container 
+  h2 Portfolio
+  .portfolio--column
+    each portfolio in portfolios
+      .portfolio--wrapper
+        .portfolio--image--wrapper 
+          .gallery--image
+            .bg--img(style="background:url(" + portfolio.imgLink + ")no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;")
+        .portfolio--text--wrapper
+          h3= portfolio.title
+          span= portfolio.content
+
+  
