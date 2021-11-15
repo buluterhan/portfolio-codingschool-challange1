@@ -414,6 +414,10 @@ a:hover {
   flex-wrap: nowrap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -474,6 +478,13 @@ nav {
   z-index: 999;
   position: relative;
 }
+@media screen and (min-width: 769px) {
+  nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+}
 @media screen and (max-width: 769px) {
   nav {
     position: fixed;
@@ -482,10 +493,12 @@ nav {
     right: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 9999;
   }
 }
 
 .navbar--container {
+  top: 0;
   display: flex;
   color: #222222;
   justify-content: flex-end;
@@ -507,7 +520,7 @@ nav {
   }
 }
 .navbar--container > li {
-  font-size: 1.1rem;
+  font-size: 1rem;
   position: relative;
   line-height: 2rem;
 }
